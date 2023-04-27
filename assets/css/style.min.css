@@ -4508,6 +4508,16 @@ body {
   max-width: 1296px;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
 a {
   transition: all 0.3s ease;
   text-decoration: none;
@@ -4574,7 +4584,6 @@ ul li {
 }
 
 .intro__inner {
-  max-width: 870px;
   margin: 0 auto;
   padding: 60px 0;
   background: #F5F5F5;
@@ -4592,7 +4601,7 @@ ul li {
   text-align: center;
   font-size: 2.4rem;
   line-height: 32px;
-  margin: 24px auto 42px;
+  margin: 24px auto 58px;
 }
 
 .intro__filter {
@@ -4606,30 +4615,239 @@ ul li {
 
 .intro__block {
   left: 50%;
-  transform: translateX(-50%);
-  top: 40px;
+  transform: translateX(-40%);
+  top: -25px;
   z-index: 2;
+  display: flex;
+}
+.intro__block:hover {
+  transform: translateX(-40%) scale(1.05);
+  color: #004E9C;
+}
+.intro__block div {
+  position: absolute;
+  font-size: 16px;
+  width: 200px;
+  left: 100%;
+  top: -10px;
 }
 
 .intro__filter-left {
-  left: 35%;
-  transform: translateX(-35%);
+  left: 40%;
+  transform: translateX(-70%);
+  top: 60px;
+}
+.intro__filter-left:hover {
+  transform: translateX(-70%) scale(1.05);
+  color: #004E9C;
+}
+.intro__filter-left div {
+  position: absolute;
+  font-size: 16px;
+  width: 300px;
+  left: -280px;
+  top: 108px;
 }
 
 .intro__filter-right {
-  right: 35%;
-  transform: translateX(35%);
+  right: 40%;
+  transform: translateX(70%);
+  top: 60px;
+}
+.intro__filter-right:hover {
+  transform: translateX(70%) scale(1.05);
+  color: #004E9C;
+}
+.intro__filter-right div {
+  position: absolute;
+  font-size: 16px;
+  width: 200px;
+  left: 100px;
+  top: 106px;
 }
 
 .intro__column {
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-65%);
   top: 60px;
   z-index: 1;
 }
+.intro__column:hover {
+  transform: translateX(-65%) scale(1.05);
+  color: #004E9C;
+}
+.intro__column div {
+  position: absolute;
+  font-size: 16px;
+  width: 300px;
+  left: -290px;
+  top: 308px;
+}
 
 .intro__tank {
-  right: 30%;
+  right: 33%;
   top: 100%;
-  transform: translateY(-35px);
+  transform: translateY(-13%);
+}
+.intro__tank:hover {
+  transform: translateY(-13%) scale(1.05);
+  color: #004E9C;
+}
+.intro__tank div {
+  position: absolute;
+  font-size: 16px;
+  width: 200px;
+  left: 120px;
+  top: 100px;
+}
+
+.how {
+  padding: 140px 0;
+}
+
+.how__title {
+  text-align: center;
+}
+
+.how__main {
+  margin-top: 80px;
+}
+
+.how__section-title {
+  text-align: center;
+  background: #F5F5F5;
+  border-radius: 12px;
+  width: 202px;
+  height: 68px;
+  line-height: 68px;
+  color: #004E9C;
+  font-weight: 700;
+  margin: 60px auto;
+}
+
+.how__section-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.how__section-image {
+  display: block;
+}
+
+.how__section-info.position-1 .how__section-image {
+  margin-right: 48px;
+}
+
+.how__section-info.position-2 .how__section-image {
+  margin-left: auto;
+}
+
+.how__section-text {
+  font-weight: 300;
+  max-width: 990px;
+}
+
+.good {
+  padding: 136px 0 168px;
+  background: #004E9C;
+  color: #F5F5F5;
+}
+
+.good__title {
+  color: #F5F5F5;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.good__main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.good__item {
+  max-width: 636px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.good__item img {
+  margin-right: 32px;
+}
+
+.good__info h3 {
+  color: #F5F5F5;
+  margin-bottom: 24px;
+  width: 280px;
+}
+
+.good__text {
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.work {
+  padding: 140px 0;
+}
+
+.work__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.work__main {
+  align-items: center;
+}
+
+.work__img {
+  margin-right: 40px;
+}
+
+.work__info p {
+  max-width: 620px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.work__info p:last-child {
+  margin-bottom: 0;
+}
+
+.table {
+  padding: 140px 0;
+}
+
+.table__title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.table__descr {
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.table__bottom {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.table__bottom-text {
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 24px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  max-width: 620px;
+  width: 100%;
+  background: #004E9C;
+  margin: 0 auto;
 }
