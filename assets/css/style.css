@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Grid v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -5994,8 +5995,8 @@ p {
     font-size: 1.6rem;
 }
 
-.header__nav li a:hover {
-    color: #48CAE4;
+ul li:before {
+    display: none;
 }
 
 .intro__inner {
@@ -6474,4 +6475,83 @@ p {
     font-size: 3.2rem;
     font-weight: 600;
     margin-bottom: 28px;
+}
+
+.how-works {
+    padding: 140px 0;
+}
+
+.how-works__title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.how-works__wrapper {
+    margin-bottom: 40px;
+}
+
+.how-works__wrapper:nth-child(even) {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.how-works__wrapper:nth-child(even) .how-works__item {
+    text-align: left;
+}
+
+.how-works__wrapper ol li {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 22px;
+    margin-top: 24px;
+}
+
+.how-works__wrapper ol li:nth-child(1)::before {
+    content: "а";
+}
+
+.how-works__wrapper ol li:nth-child(2)::before {
+    content: "б";
+}
+
+.how-works__wrapper ol li::before {
+    border: 1px solid #004E9C;
+    border-radius: 4px;
+}
+
+.how-works__item {
+    background: #F5F5F5;
+    padding: 40px 32px;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 40px;
+    border-radius: 20px;
+}
+
+.how-works__item:nth-child(even) {
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+.how-works__icon {
+    margin-right: 32px;
+}
+
+.how-works__info {
+    max-width: 460px;
+}
+
+.how-works__subtitle {
+    font-size: 2.8rem;
+    color: #004E9C;
+    margin-bottom: 24px;
+}
+
+.how-works__text {
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.how-works__btn {
+    margin-top: 80px;
 }
