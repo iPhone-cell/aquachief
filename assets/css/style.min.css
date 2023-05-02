@@ -5225,3 +5225,68 @@ ul li:before {
     margin-left: 0;
   }
 }
+@media (max-width: 992px) {
+  .header__messengers {
+    text-align: center;
+  }
+  .header__messengers a {
+    margin-right: 16px;
+  }
+  .process__main {
+    flex-wrap: wrap;
+  }
+  .process__info ol li {
+    max-width: 700px;
+  }
+  .intro {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .intro__filter-left div {
+    width: 220px;
+    left: -210px;
+  }
+  .intro__column div {
+    width: 220px;
+    left: -220px;
+  }
+  .good__item {
+    width: 100%;
+    max-width: 760px;
+    margin-bottom: 60px;
+  }
+  .good__item .mb-0 {
+    margin-bottom: 60px;
+  }
+  .good__item .mb-0:last-child {
+    margin-bottom: 0;
+  }
+  .work__main {
+    flex-wrap: wrap;
+  }
+  .work__img {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .requirements__item {
+    font-size: 16px;
+  }
+  .catalog__descr {
+    min-height: 220px;
+  }
+  .catalog__descr ul {
+    min-height: 182px;
+  }
+  .catalog__inner {
+    align-items: flex-start;
+  }
+  .catalog__item ul {
+    min-height: 190px;
+  }
+  .how-works__arrow img {
+    width: 200px;
+  }
+  .how-works__item {
+    margin-right: 10px;
+  }
+}
