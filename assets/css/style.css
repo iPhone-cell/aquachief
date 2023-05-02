@@ -6269,11 +6269,15 @@ ul li:before {
     margin-bottom: 24px;
 }
 
-.table__descr {
+.table {
     font-weight: 300;
     line-height: 28px;
     text-align: center;
     margin-bottom: 80px;
+}
+
+.table img {
+    width: 100%;
 }
 
 .table__bottom {
@@ -6554,4 +6558,33 @@ ul li:before {
 
 .how-works__btn {
     margin-top: 80px;
+}
+
+.footer {
+    padding: 40px 0;
+    background: #004E9C;
+}
+
+.footer__inner {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer__messengers a {
+    margin-right: 32px;
+}
+
+.footer__messengers a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.footer__btn {
+    border: 1px solid #F5F5F5;
+    border-radius: 8px;
+}
+
+.footer__btn:hover {
+    background: #F5F5F5;
+    color: #004E9C;
 }
