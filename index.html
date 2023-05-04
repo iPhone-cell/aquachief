@@ -41,8 +41,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="mx-auto">
-					<nav class="header__nav d-flex justify-content-center">
+				<div class="mx-auto header_wrapper">
+					<nav class="header__nav d-flex justify-content-center js-description-info">
 						<ul class="d-flex menu justify-content-between col-lg-8 col-md-11">
 							<li>
 								<a href="#">Главная</a>
@@ -62,10 +62,12 @@
 						</ul>
 					</nav>
 					<div class="hamburger_wrapper">
-						<div class="hamburger">
-							<span></span><span></span><span></span>
+						<div class="hamburger js-btn-menu">
+							<div class="hamburger">
+								<span></span><span></span><span></span>
+							</div>
 						</div>
-						<div class="hamburger__link">Меню</div>
+						<div class="hamburger__link" id="hamburgerLink">Меню</div>
 					</div>
 				</div>
 			</div>
@@ -736,6 +738,8 @@
 			</div>
 		</div>
 	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
 

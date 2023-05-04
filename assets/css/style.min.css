@@ -4632,6 +4632,10 @@ ul li:before {
   display: none;
 }
 
+.hamburger__link {
+  display: none;
+}
+
 .intro__inner {
   margin: 0 auto;
   padding: 60px 0;
@@ -5295,10 +5299,24 @@ ul li:before {
   }
 }
 @media (max-width: 767px) {
+  body {
+    font-size: 1.4rem;
+    line-height: 20px !important;
+  }
+  .header {
+    padding: 12px 0;
+  }
+  .header__inner {
+    margin-bottom: 12px;
+  }
+  .header__logo img {
+    width: 100px;
+    height: 36px;
+  }
   .header__inner .btn {
     font-size: 0;
     width: 40px;
-    height: 40px;
+    height: 36px;
     z-index: 1;
     color: #fff;
   }
@@ -5310,12 +5328,29 @@ ul li:before {
     height: 16px;
     z-index: 2;
   }
+  .header__messengers img {
+    width: 20px;
+    height: 20px;
+  }
+  .header_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .menu {
     display: none !important;
     opacity: 0;
     top: -100%;
     flex-direction: column;
+    text-align: center;
     align-items: center;
+  }
+  .menu li {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    line-height: 16px;
+  }
+  .menu li:last-child {
+    margin-bottom: 0;
   }
   .menu_active {
     opacity: 1;
@@ -5324,9 +5359,9 @@ ul li:before {
   .hamburger__link {
     display: block;
     height: 0;
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #004E9C;
-    margin-top: -2px;
+    margin-top: -4px;
   }
   .hamburger_wrapper {
     display: flex;
@@ -5348,18 +5383,67 @@ ul li:before {
     transition: 0.3s all;
   }
   .hamburger_active span {
-    margin-bottom: -2px;
+    margin-bottom: 2px;
   }
   .hamburger_active span:nth-child(1) {
-    transform: translateY(3px) rotate(-45deg);
+    transform: translateY(5px) rotate(-45deg);
   }
   .hamburger_active span:nth-child(2) {
     display: none;
   }
   .hamburger_active span:nth-child(3) {
-    transform: translateY(3px) rotate(45deg);
+    transform: translateY(2.5px) rotate(45deg);
   }
-  .hamburger_active span:nth-child(4) {
+  .intro__inner {
+    padding-top: 28px 0 40px;
+  }
+  .intro__title {
+    font-size: 3.6rem;
+  }
+  .intro__text {
+    font-size: 1.4rem;
+    line-height: 20px;
+    max-width: 256px;
+    margin-bottom: 32px;
+  }
+  .intro__filter img {
+    width: 256px;
+    height: 179px;
+  }
+  .intro__filter div {
     display: none;
+  }
+  .intro__block {
+    top: 9px;
+  }
+  .intro__block img {
+    width: 44px;
+    height: 26px;
+  }
+  .intro__filter-left {
+    top: 10px;
+  }
+  .intro__filter-right {
+    top: 10px;
+  }
+  .intro__filter-left img, .intro__filter-right img {
+    width: 20px;
+    height: 62px;
+  }
+  .intro__column {
+    transform: translateX(-62%);
+    top: -8px;
+  }
+  .intro__column img {
+    width: 46px;
+    height: 246px;
+  }
+  .intro__tank {
+    right: 100px;
+    top: 72%;
+  }
+  .intro__tank img {
+    width: 53px;
+    height: 105px;
   }
 }
