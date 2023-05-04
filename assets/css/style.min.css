@@ -4686,8 +4686,8 @@ ul li:before {
 }
 
 .intro__filter-left {
-  left: 40%;
-  transform: translateX(-70%);
+  left: 50%;
+  transform: translateX(-200px);
   top: 60px;
 }
 .intro__filter-left:hover {
@@ -4703,8 +4703,8 @@ ul li:before {
 }
 
 .intro__filter-right {
-  right: 40%;
-  transform: translateX(70%);
+  right: 50%;
+  transform: translateX(200px);
   top: 60px;
 }
 .intro__filter-right:hover {
@@ -4738,9 +4738,9 @@ ul li:before {
 }
 
 .intro__tank {
-  right: 33%;
-  top: 100%;
-  transform: translateY(-13%);
+  right: 50%;
+  transform: translateX(215px);
+  top: 92%;
 }
 .intro__tank:hover {
   transform: translateY(-13%) scale(1.05);
@@ -5234,10 +5234,10 @@ ul li:before {
   }
 }
 @media (max-width: 992px) {
-  .header__messengers {
+  .header__messengers, .footer__messengers {
     text-align: center;
   }
-  .header__messengers a {
+  .header__messengers a, .footer__messengers a {
     margin-right: 16px;
   }
   .process__main {
@@ -5300,7 +5300,7 @@ ul li:before {
 }
 @media (max-width: 767px) {
   body {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 20px !important;
   }
   .header {
@@ -5309,28 +5309,20 @@ ul li:before {
   .header__inner {
     margin-bottom: 12px;
   }
-  .header__logo img {
-    width: 100px;
-    height: 36px;
-  }
-  .header__inner .btn {
+  .header__inner .btn, .footer__btn {
     font-size: 0;
     width: 40px;
     height: 36px;
     z-index: 1;
     color: #fff;
   }
-  .header__inner .btn::before {
+  .header__inner .btn::before, .footer__btn::before {
     content: "";
     background: url("../images/mobile__callback.svg");
     display: inline-block;
     width: 16px;
     height: 16px;
     z-index: 2;
-  }
-  .header__messengers img {
-    width: 20px;
-    height: 20px;
   }
   .header_wrapper {
     display: flex;
@@ -5359,7 +5351,7 @@ ul li:before {
   .hamburger__link {
     display: block;
     height: 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #004E9C;
     margin-top: -4px;
   }
@@ -5401,49 +5393,117 @@ ul li:before {
     font-size: 3.6rem;
   }
   .intro__text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 20px;
-    max-width: 256px;
-    margin-bottom: 32px;
+    max-width: 520px;
+    margin-bottom: 80px;
+  }
+  .intro__filter {
+    height: 588px;
+    position: relative;
   }
   .intro__filter img {
-    width: 256px;
-    height: 179px;
+    height: 50%;
   }
   .intro__filter div {
-    display: none;
+    font-size: 1.2rem;
   }
   .intro__block {
-    top: 9px;
+    top: -10px;
+    transform: translateX(-22%);
+  }
+  .intro__block div {
+    left: 40%;
   }
   .intro__block img {
-    width: 44px;
-    height: 26px;
+    width: 50%;
+    height: 50%;
   }
   .intro__filter-left {
-    top: 10px;
+    transform: translateX(-130px);
+  }
+  .intro__filter-left div {
+    top: 40px;
+    left: -120px;
+    width: 150px;
   }
   .intro__filter-right {
-    top: 10px;
+    transform: translateX(130px);
+  }
+  .intro__filter-right div {
+    top: 40px;
+    right: -100px;
+    width: 120px;
   }
   .intro__filter-left img, .intro__filter-right img {
-    width: 20px;
-    height: 62px;
+    width: 50%;
+    height: 50%;
   }
   .intro__column {
-    transform: translateX(-62%);
-    top: -8px;
+    transform: translateX(-60%) translateY(0px);
+    top: 34px;
+  }
+  .intro__column div {
+    width: 150px;
+    top: 140px;
+    left: -130px;
   }
   .intro__column img {
-    width: 46px;
-    height: 246px;
+    width: 50%;
+    height: 70%;
   }
   .intro__tank {
-    right: 100px;
-    top: 72%;
+    top: 215px;
+    transform: translateX(150px);
+  }
+  .intro__tank div {
+    width: 150px;
+    top: 45px;
+    right: -140px;
   }
   .intro__tank img {
-    width: 53px;
-    height: 105px;
+    width: 50%;
+    height: 50%;
+  }
+  .process__info {
+    max-width: 520px;
+  }
+  .process__info ol li {
+    max-width: 520px;
+  }
+  .requirements__main {
+    flex-direction: column;
+  }
+  .requirements__item {
+    width: 100%;
+    padding-top: 10px !important;
+  }
+  .requirements__item:nth-child(8) {
+    margin-top: 0px;
+    padding-top: 0 !important;
+  }
+  .catalog__top {
+    text-align: center;
+  }
+  .catalog__top img {
+    max-width: 400px;
+  }
+  .catalog__descr {
+    min-height: auto;
+    margin-bottom: 40px;
+  }
+  .catalog__item {
+    margin-bottom: 80px;
+  }
+  .catalog__item ul {
+    min-height: auto;
+    margin-bottom: 40px;
+  }
+  .catalog__btn {
+    max-width: 400px;
+    margin: 0;
+  }
+  .how-works__arrow img {
+    max-width: 120px;
   }
 }
