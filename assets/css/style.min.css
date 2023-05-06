@@ -5152,6 +5152,138 @@ ul li:before {
   display: none;
 }
 
+.jquery-modal {
+  z-index: 3 !important;
+}
+
+.modal {
+  max-width: 796px !important;
+  max-height: 816px !important;
+  height: 90%;
+  background: #FFFFFF;
+  border-radius: 20px !important;
+  padding: 56px 0 !important;
+}
+.modal .modal__wrapper {
+  max-width: 684px;
+  max-height: 816px;
+  margin: 0 auto;
+}
+.modal .modal__wrapper h2 {
+  font-size: 4.8rem !important;
+  line-height: 60px;
+  margin-bottom: 48px;
+}
+.modal .modal__wrapper .modal__form {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 32px;
+  color: #0E0E0E;
+}
+.modal .modal__wrapper input[type=text] {
+  padding: 0 24px;
+  width: 684px;
+  height: 64px;
+  line-height: 64px;
+  border: 1px solid rgba(14, 14, 14, 0.2);
+  border-radius: 8px;
+  margin: 18px 0 28px;
+  transition: all 0.3s ease;
+}
+.modal .modal__wrapper input[type=text]:hover {
+  border: 1px solid #004E9C;
+}
+.modal .modal__wrapper input[type=text]::placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #0E0E0E;
+  opacity: 0.4;
+}
+.modal .modal__wrapper a {
+  font-size: 2rem;
+  line-height: 28px;
+  text-decoration-line: underline;
+  color: #004E9C;
+}
+.modal .modal__wrapper a:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.checkbox {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__label {
+  padding-left: 52px;
+  cursor: pointer;
+}
+
+.checkbox__label:before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: #F5F5F5;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.checkbox__label:after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: url("../images/check.svg") no-repeat;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.checkbox__input:checked + .checkbox__label:after {
+  opacity: 1;
+}
+
+.checkbox-disabled .checkbox__label:before {
+  opacity: 0.8;
+}
+.checkbox-disabled .checkbox__label:after {
+  background: url("../images/check-disabled.svg") no-repeat;
+}
+
+.form__btn {
+  transition: all 0.3s ease;
+  border: none;
+  height: 84px;
+  line-height: 84px;
+}
+
+.modal a.close-modal {
+  background: url("../images/close.svg") no-repeat !important;
+  width: 60px !important;
+  height: 60px !important;
+  top: -50px !important;
+  right: -50px !important;
+}
+.modal a.close-modal:hover {
+  transform: scale(1.05);
+}
+
 .footer {
   padding: 40px 0;
   background: #004E9C;

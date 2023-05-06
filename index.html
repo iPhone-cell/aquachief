@@ -36,7 +36,7 @@
 						</a>
 					</div>
 					<div class="ms-auto col-lg-3 col-md-4 col-sm-3 col-2">
-						<a href="#" class="btn blue">Заказать звонок</a>
+						<a href="#popup" rel="modal:open" class="btn blue">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -889,8 +889,39 @@
 			</div>
 		</div>
 	</footer>
+	<div id="popup" class="modal">
+		<div class="modal__wrapper">
+			<h2 class="title">
+				Заполните форму
+				и мы с вами свяжемся
+			</h2>
+			<form action="#" class="modal__form">
+				<div>
+					<label for="name">Имя</label>
+				</div>
+				<input type="text" placeholder="Владимир" id="name">
+				<div>
+					<label for="tel">Телефон/WhatsApp, либо username в Telegram</label>
+				</div>
+				<input type="text" placeholder="+7 (999) 123-4567" id="tel">
+				<div class="checkbox">
+					<input type="checkbox" class="checkbox__input" id="checkbox_1">
+					<label for="checkbox_1" class="checkbox__label">Не звонить, общение только в чате</label>
+				</div>
+				<div class="checkbox checkbox-disabled">
+					<input type="checkbox" checked disabled class="checkbox__input" id="checkbox_2">
+					<label for="checkbox_2" class="checkbox__label">Я соглашаюсь с <a href="#">положением об обработке <br>
+							персональных данных</a></label>
+				</div>
+				<button type="submit" class="btn form__btn">Отправить</button>
+			</form>
+		</div>
+	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 	<script src="assets/js/app.js"></script>
 </body>
 
