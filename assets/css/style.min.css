@@ -5148,7 +5148,7 @@ ul li:before {
   margin-top: 80px;
 }
 
-.intro__filter-mobile, .mobile__table-icon, .mobile__table {
+.intro__filter-mobile, .mobile__table-icon, .mobile__table, .how-works__main-mobile {
   display: none;
 }
 
@@ -5308,7 +5308,7 @@ ul li:before {
     font-size: 1.6rem;
     line-height: 20px !important;
   }
-  .header {
+  .header, .footer {
     padding: 12px 0;
   }
   .header__inner {
@@ -5540,30 +5540,20 @@ ul li:before {
     line-height: 28px;
     top: 5px;
   }
-  ul li:before {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    background: #004E9C;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-  }
   .container {
     padding: 0 20px;
   }
-  .header__logo img {
+  .header__logo img, .footer__logo img {
     width: 100px;
     height: 36px;
   }
-  .header__messengers {
+  .header__messengers, .footer__messengers {
     text-align: right;
   }
-  .header__messengers a {
+  .header__messengers a, .footer__messengers a {
     margin-right: 8px;
   }
-  .header__messengers img {
+  .header__messengers img, .footer__messengers img {
     width: 20px;
     height: 20px;
   }
@@ -5808,6 +5798,16 @@ ul li:before {
   .catalog ul li {
     font-size: 1.4rem;
   }
+  .catalog ul li:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #004E9C;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+  }
   .catalog h4 {
     font-size: 1.6rem;
   }
@@ -5835,5 +5835,49 @@ ul li:before {
   }
   .catalog__item {
     margin-bottom: 24px;
+  }
+  .how-works__main {
+    display: none;
+  }
+  .how-works__main-mobile {
+    display: block;
+  }
+  .how-works__item {
+    padding: 24px 20px;
+    margin-right: 0;
+  }
+  .how-works__item ol {
+    padding: 0;
+  }
+  .how-works__item ol li {
+    font-size: 1.4rem;
+    line-height: 20px;
+  }
+  .how-works__wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .how-works__wrapper img {
+    width: 52px;
+    height: 52px;
+  }
+  .how-works__subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  .how-works__text {
+    font-size: 1.4rem;
+    line-height: 20px;
+  }
+  .how-works__arrow {
+    margin: 8px 0;
+  }
+  .how-works__arrow img {
+    width: 12px;
+    height: 72px;
+  }
+  .how-works__btn {
+    margin: 32px 0 60px;
   }
 }
