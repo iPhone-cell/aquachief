@@ -369,7 +369,7 @@
 						Для оптимального подбора ионообменной смолы
 						требуется консультация специалиста
 					</div>
-					<a href="#" class="btn table_btn">Получить кносультацию</a>
+					<a href="#popup" rel="modal:open" class="btn table_btn">Получить кносультацию</a>
 				</div>
 			</div>
 		</section>
@@ -441,7 +441,7 @@
 						для монтажа в коттеджах, частных домах, квартирах.
 					</div>
 				</div>
-				<a href="#" class="btn for__btn">
+				<a href="#popup" rel="modal:open" class="btn for__btn">
 					Подойдёт ли мне AquaChief?
 				</a>
 			</div>
@@ -522,7 +522,7 @@
 						<div class="catalog__price">
 							от 27 800 руб
 						</div>
-						<a href="#" class="btn catalog__btn">
+						<a href="#popup" rel="modal:open" class="btn catalog__btn">
 							Заказать
 						</a>
 					</div>
@@ -554,7 +554,7 @@
 						<div class="catalog__price">
 							от 31 900 руб
 						</div>
-						<a href="#" class="btn catalog__btn">
+						<a href="#popup" rel="modal:open" class="btn catalog__btn">
 							Заказать
 						</a>
 					</div>
@@ -591,7 +591,7 @@
 						<div class="catalog__price">
 							от 40 500 руб
 						</div>
-						<a href="#" class="btn catalog__btn">
+						<a href="#popup" rel="modal:open" class="btn catalog__btn">
 							Заказать
 						</a>
 					</div>
@@ -605,7 +605,60 @@
 					Подобрать свой AquaChief
 				</h2>
 				<div class="selection__main">
-		
+					<form action="#" class="selection__form">
+						<div>
+							<label for="range">Одновременно открытых кранов</label>
+						</div>
+						<span>1</span><input type="range" id="range" name="range" min="1" max="5"><span>5</span>
+						<div>
+							<label>Что беспокоит в воде:</label>
+						</div>
+						<div class="checkbox checkbox-disabled">
+							<input type="checkbox" checked disabled class="checkbox__input" id="selection-checkbox_1">
+							<label for="selection-checkbox_1" class="checkbox__label">Железо</label>
+						</div>
+						<div class="checkbox ">
+							<input type="checkbox" class="checkbox__input" id="selection-checkbox_2">
+							<label for="selection-checkbox_2" class="checkbox__label">Органика</label>
+						</div>
+						<div class="checkbox ">
+							<input type="checkbox" class="checkbox__input" id="selection-checkbox_3">
+							<label for="selection-checkbox_3" class="checkbox__label">Жесткость</label>
+						</div>
+						<div class="checkbox ">
+							<input type="checkbox" class="checkbox__input" id="selection-checkbox_4">
+							<label for="selection-checkbox_4" class="checkbox__label">Марганец</label>
+						</div>
+						<div class="checkbox ">
+							<input type="checkbox" class="checkbox__input" id="selection-checkbox_5">
+							<label for="selection-checkbox_5" class="checkbox__label">Запах</label>
+						</div>
+						<div class="catalog__price">
+							от 29 990 руб
+						</div>
+						<div>
+							<label for="selection_name">Имя</label>
+						</div>
+						<input type="text" placeholder="Владимир" id="selection_name">
+						<div>
+							<label for="selection_tel">Телефон/WhatsApp, либо username в Telegram</label>
+							<input type="text" placeholder="+7 (999) 123-4567" id="selection_tel">
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" class="checkbox__input" id="selection_checkbox-not-call">
+							<label for="selection_checkbox-not-call" class="checkbox__label">Не звонить, общение только в
+								чате</label>
+						</div>
+						<div>
+							Если у Вас есть анализ воды, приложите его - это сделает расчет оборудования более точным
+						</div>
+						<label for="#upload">Загрузить файл</label>
+						<input type="file" id="#upload">
+						<button type="submit" class="btn form__btn">Отправить</button>
+					</form>
+					<div class="selection__image">
+						<img src="assets/images/ready.svg" alt="">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -861,7 +914,7 @@
 						</div>
 					</div>
 				</div>
-				<a href="#" class="btn how-works__btn">
+				<a href="#popup" rel="modal:open" class="btn how-works__btn">
 					Нужна консультация
 				</a>
 			</div>
@@ -884,7 +937,7 @@
 					</a>
 				</div>
 				<div class="ms-auto col-lg-3 col-md-4 col-sm-3 col-2">
-					<a href="#" class="btn footer__btn">Заказать звонок</a>
+					<a href="#popup" rel="modal:open" class="btn footer__btn">Заказать звонок</a>
 				</div>
 			</div>
 		</div>

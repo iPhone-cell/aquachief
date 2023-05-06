@@ -5181,25 +5181,6 @@ ul li:before {
   line-height: 32px;
   color: #0E0E0E;
 }
-.modal .modal__wrapper input[type=text] {
-  padding: 0 24px;
-  width: 684px;
-  height: 64px;
-  line-height: 64px;
-  border: 1px solid rgba(14, 14, 14, 0.2);
-  border-radius: 8px;
-  margin: 18px 0 28px;
-  transition: all 0.3s ease;
-}
-.modal .modal__wrapper input[type=text]:hover {
-  border: 1px solid #004E9C;
-}
-.modal .modal__wrapper input[type=text]::placeholder {
-  font-weight: 400;
-  font-size: 2rem;
-  color: #0E0E0E;
-  opacity: 0.4;
-}
 .modal .modal__wrapper a {
   font-size: 2rem;
   line-height: 28px;
@@ -5209,6 +5190,27 @@ ul li:before {
 .modal .modal__wrapper a:hover {
   text-decoration: none;
   opacity: 0.9;
+}
+
+input[type=text] {
+  padding: 0 24px;
+  max-width: 684px;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  border: 1px solid rgba(14, 14, 14, 0.2);
+  border-radius: 8px;
+  margin: 18px 0 28px;
+  transition: all 0.3s ease;
+}
+input[type=text]:hover {
+  border: 1px solid #004E9C;
+}
+input[type=text]::placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #0E0E0E;
+  opacity: 0.4;
 }
 
 .checkbox {
@@ -5282,6 +5284,70 @@ ul li:before {
 }
 .modal a.close-modal:hover {
   transform: scale(1.05);
+}
+
+input[type=range] {
+  -webkit-appearance: none !important;
+  background: #F5F5F5;
+  height: 16px;
+  width: 538px;
+  margin: 0 14px;
+  border-radius: 12px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #fff;
+  height: 34px;
+  width: 34px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+}
+
+.selection__form span {
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 52px;
+  color: #0E0E0E;
+  opacity: 0.4;
+}
+
+label {
+  cursor: pointer;
+}
+
+#upload {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.selection__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selection__image img {
+  width: 636px;
+  height: 780px;
+  max-width: 636px;
+  max-height: 780px;
+}
+
+.selection__form {
+  max-width: 620px;
+}
+.selection__form input {
+  margin-bottom: 28px;
+}
+
+.selection__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.form__btn {
+  margin-top: 80px;
 }
 
 .footer {
