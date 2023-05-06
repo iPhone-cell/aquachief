@@ -4944,6 +4944,7 @@ ul li:before {
 .for {
   padding: 140px 0;
   background: #004E9C;
+  border-radius: 20px;
 }
 
 .for__main {
@@ -5533,6 +5534,22 @@ ul li:before {
     line-height: 24px;
     text-align: left;
   }
+  ol li:before {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    top: 5px;
+  }
+  ul li:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #004E9C;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+  }
   .container {
     padding: 0 20px;
   }
@@ -5713,5 +5730,110 @@ ul li:before {
   }
   .table_btn {
     max-width: 280px;
+  }
+  .process h2 {
+    margin-bottom: 32px;
+  }
+  .process__main {
+    flex-direction: column-reverse;
+  }
+  .process__main .process__img {
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+  .process__main .process__img img {
+    max-width: 280px;
+    width: 100%;
+  }
+  .process__main .process__info {
+    margin-right: 0;
+    max-width: 575px;
+    width: 100%;
+  }
+  .process__main .process__info p {
+    margin-bottom: 12px;
+  }
+  .process__main ol {
+    margin: 12px 0;
+    padding: 0;
+  }
+  .process__main ol li {
+    max-width: 280px;
+    margin-bottom: 12px;
+  }
+  .for {
+    padding: 60px 0;
+  }
+  .for__title {
+    font-size: 3.6rem;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .for__info {
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+  .for__btn {
+    margin-top: 32px;
+    height: 48px;
+    line-height: 48px;
+  }
+  .requirements {
+    padding: 60px 0 !important;
+  }
+  .requirements h2 {
+    margin-bottom: 32px;
+  }
+  .requirements ol li {
+    padding-left: 60px;
+  }
+  .requirements ol li:before {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 12px;
+  }
+  .requirements li {
+    margin-bottom: 12px;
+  }
+  .requirements li:nth-child(7) {
+    margin-bottom: 20px;
+  }
+  .requirements li:last-child {
+    margin-bottom: 0;
+  }
+  .catalog h2 {
+    margin-bottom: 32px;
+  }
+  .catalog ul li {
+    font-size: 1.4rem;
+  }
+  .catalog h4 {
+    font-size: 1.6rem;
+  }
+  .catalog__price {
+    font-size: 2rem;
+  }
+  .catalog__top {
+    margin-bottom: 12px;
+  }
+  .catalog__descr {
+    margin-bottom: 12px;
+  }
+  .catalog__item ul {
+    margin-bottom: 12px;
+  }
+  .catalog__item ul li {
+    margin-bottom: 4px;
+  }
+  .catalog__price {
+    margin-bottom: 12px;
+  }
+  .catalog__btn {
+    height: 48px;
+    line-height: 48px;
+  }
+  .catalog__item {
+    margin-bottom: 24px;
   }
 }
