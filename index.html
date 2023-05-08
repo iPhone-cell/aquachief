@@ -605,33 +605,45 @@
 					Подобрать свой AquaChief
 				</h2>
 				<div class="selection__main">
-					<form action="#" class="selection__form">
+					<form action="#" class="selection__form col-lg-6 col-md-6 col-12">
 						<div>
 							<label for="range">Одновременно открытых кранов</label>
 						</div>
-						<span>1</span><input type="range" id="range" name="range" min="1" max="5"><span>5</span>
+						<div class="selection__range">
+							<span>1</span><input type="range" id="range" min="1" max="5" name="range"
+								list="markers"><span>5</span>
+							<datalist id="markers">
+								<option value="1"></option>
+								<option value="2"></option>
+								<option value="3"></option>
+								<option value="4"></option>
+								<option value="5"></option>
+							</datalist>
+						</div>
 						<div>
 							<label>Что беспокоит в воде:</label>
 						</div>
-						<div class="checkbox checkbox-disabled">
-							<input type="checkbox" checked disabled class="checkbox__input" id="selection-checkbox_1">
-							<label for="selection-checkbox_1" class="checkbox__label">Железо</label>
-						</div>
-						<div class="checkbox ">
-							<input type="checkbox" class="checkbox__input" id="selection-checkbox_2">
-							<label for="selection-checkbox_2" class="checkbox__label">Органика</label>
-						</div>
-						<div class="checkbox ">
-							<input type="checkbox" class="checkbox__input" id="selection-checkbox_3">
-							<label for="selection-checkbox_3" class="checkbox__label">Жесткость</label>
-						</div>
-						<div class="checkbox ">
-							<input type="checkbox" class="checkbox__input" id="selection-checkbox_4">
-							<label for="selection-checkbox_4" class="checkbox__label">Марганец</label>
-						</div>
-						<div class="checkbox ">
-							<input type="checkbox" class="checkbox__input" id="selection-checkbox_5">
-							<label for="selection-checkbox_5" class="checkbox__label">Запах</label>
+						<div class="selection__checkbox-wrapper">
+							<div class="checkbox">
+								<input type="checkbox" checked class="checkbox__input" id="selection-checkbox_1">
+								<label for="selection-checkbox_1" class="checkbox__label">Железо</label>
+							</div>
+							<div class="checkbox ">
+								<input type="checkbox" class="checkbox__input" id="selection-checkbox_2">
+								<label for="selection-checkbox_2" class="checkbox__label">Органика</label>
+							</div>
+							<div class="checkbox ">
+								<input type="checkbox" class="checkbox__input" id="selection-checkbox_3">
+								<label for="selection-checkbox_3" class="checkbox__label">Жесткость</label>
+							</div>
+							<div class="checkbox ">
+								<input type="checkbox" class="checkbox__input" id="selection-checkbox_4">
+								<label for="selection-checkbox_4" class="checkbox__label">Марганец</label>
+							</div>
+							<div class="checkbox ">
+								<input type="checkbox" class="checkbox__input" id="selection-checkbox_5">
+								<label for="selection-checkbox_5" class="checkbox__label">Запах</label>
+							</div>
 						</div>
 						<div class="catalog__price">
 							от 29 990 руб
@@ -652,12 +664,14 @@
 						<div>
 							Если у Вас есть анализ воды, приложите его - это сделает расчет оборудования более точным
 						</div>
-						<label for="#upload">Загрузить файл</label>
-						<input type="file" id="#upload">
+						<div class="selection__file">
+							<label for="#upload">Загрузить файл</label>
+							<input type="file" id="#upload">
+						</div>
 						<button type="submit" class="btn form__btn">Отправить</button>
 					</form>
-					<div class="selection__image">
-						<img src="assets/images/ready.svg" alt="">
+					<div class="selection__image col-lg-6 col-md-5 col-12">
+						<img src="assets/images/ready.svg" alt="" width="636px;" height="780px;">
 					</div>
 				</div>
 			</div>

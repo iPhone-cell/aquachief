@@ -5225,7 +5225,7 @@ input[type=text]::placeholder {
 }
 
 .checkbox__label {
-  padding-left: 52px;
+  padding: 5px 0 0 52px;
   cursor: pointer;
 }
 
@@ -5290,7 +5290,8 @@ input[type=range] {
   -webkit-appearance: none !important;
   background: #F5F5F5;
   height: 16px;
-  width: 538px;
+  max-width: 538px;
+  width: 100%;
   margin: 0 14px;
   border-radius: 12px;
 }
@@ -5325,13 +5326,13 @@ label {
 .selection__main {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .selection__image img {
-  width: 636px;
-  height: 780px;
   max-width: 636px;
   max-height: 780px;
+  width: 100%;
 }
 
 .selection__form {
@@ -5348,6 +5349,60 @@ label {
 
 .form__btn {
   margin-top: 80px;
+}
+
+.selection__range {
+  position: relative;
+  z-index: 2;
+}
+
+#markers {
+  max-width: 538px;
+  display: block;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 30px;
+  top: 20px;
+  left: 0;
+  z-index: -1;
+}
+#markers option {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #0E0E0E;
+  opacity: 0.05;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.selection__file {
+  margin-top: 28px;
+}
+.selection__file label {
+  display: block;
+  height: 64px;
+  border: 1px dashed #004E9C;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #004E9C;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 64px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.selection__file label:hover {
+  background: #004E9C;
+  color: #fff;
 }
 
 .footer {
@@ -5434,6 +5489,22 @@ label {
   }
   .requirements__item:last-child {
     margin-left: 0;
+  }
+  .selection__form {
+    max-width: 480px;
+  }
+  .selection__image img {
+    max-width: 480px;
+  }
+  #markers {
+    top: 18px;
+    margin-left: 25px;
+  }
+  .selection__range {
+    width: 600px;
+  }
+  .selection__range span {
+    font-size: 2.8rem;
   }
 }
 @media (max-width: 992px) {
@@ -5711,6 +5782,37 @@ label {
   }
   .footer__btn {
     background: url("../images/mobile-callback-footer.svg");
+  }
+  .selection__main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .selection__image {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .selection__image img {
+    max-height: 480px;
+  }
+  .selection__form {
+    max-width: 700px;
+  }
+  .selection__range {
+    width: 500px;
+  }
+  .selection__range span {
+    font-size: 2.4rem;
+  }
+  input[type=range] {
+    max-width: 420px;
+  }
+  #markers {
+    max-width: 420px;
+    top: 16px;
+    margin-left: 38px;
+  }
+  .catalog {
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 575px) {
@@ -6077,5 +6179,60 @@ label {
   }
   .how-works__btn {
     margin: 32px 0 60px;
+  }
+  .selection__title {
+    margin-bottom: 32px;
+  }
+  .selection__image {
+    margin-bottom: 16px;
+  }
+  .selection__image img {
+    width: 280px;
+    height: 270px;
+  }
+  .selection__range {
+    width: 280px;
+  }
+  input[type=range] {
+    width: 220px;
+  }
+  #markers {
+    width: 230px;
+    margin-left: 20px;
+    top: 15px;
+  }
+  .selection__checkbox-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .checkbox__input {
+    margin-bottom: 12px;
+  }
+  input::placeholder {
+    font-size: 1.4rem;
+  }
+  input[type=text] {
+    margin-top: 8px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 12px;
+  }
+  .checkbox label::before {
+    width: 24px;
+    height: 24px;
+  }
+  .checkbox__label {
+    padding: 3px 0 0 32px;
+  }
+  .selection__file label {
+    height: 44px;
+    line-height: 44px;
+  }
+  .selection .form__btn {
+    height: 48px;
+    line-height: 48px;
+    margin-top: 16px;
   }
 }
