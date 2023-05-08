@@ -5308,11 +5308,6 @@ input[type=range] {
 
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none !important;
-  background: #fff;
-  height: 34px;
-  width: 34px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
-  border-radius: 50%;
 }
 
 .selection__form span {
@@ -5375,16 +5370,27 @@ label {
   align-items: center;
   width: 100%;
   margin-left: 30px;
-  top: 20px;
+  top: 15px;
   left: 0;
-  z-index: -1;
+  z-index: 1;
 }
 #markers option {
+  cursor: pointer;
   display: inline-block;
   width: 24px;
   height: 24px;
   background: #0E0E0E;
   opacity: 0.05;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+}
+
+#markers option.active {
+  display: block;
+  background: #fff;
+  opacity: 1;
+  height: 34px;
+  width: 34px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
   border-radius: 50%;
 }

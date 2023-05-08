@@ -604,7 +604,7 @@
 				<h2 class="selection__title title">
 					Подобрать свой AquaChief
 				</h2>
-				<div class="selection__main">
+				<div class="selection__main tabs-wrapper">
 					<form action="#" class="selection__form col-lg-6 col-md-6 col-12">
 						<div>
 							<label for="range">Одновременно открытых кранов</label>
@@ -612,12 +612,12 @@
 						<div class="selection__range">
 							<span>1</span><input type="range" id="range" min="1" max="5" name="range"
 								list="markers"><span>5</span>
-							<datalist id="markers">
-								<option value="1"></option>
-								<option value="2"></option>
-								<option value="3"></option>
-								<option value="4"></option>
-								<option value="5"></option>
+							<datalist id="markers" class="tabs">
+								<option value="1" class="tab" data-name="option1"></option>
+								<option value="2" class="tab" data-name="option2"></option>
+								<option value="3" class="tab" data-name="option3"></option>
+								<option value="4" class="tab" data-name="option4"></option>
+								<option value="5" class="tab" data-name="option5"></option>
 							</datalist>
 						</div>
 						<div>
@@ -626,23 +626,23 @@
 						<div class="selection__checkbox-wrapper">
 							<div class="checkbox">
 								<input type="checkbox" checked class="checkbox__input" id="selection-checkbox_1">
-								<label for="selection-checkbox_1" class="checkbox__label">Железо</label>
+								<label for="selection-checkbox_1" class="checkbox__label calculator-checkbox">Железо</label>
 							</div>
 							<div class="checkbox ">
 								<input type="checkbox" class="checkbox__input" id="selection-checkbox_2">
-								<label for="selection-checkbox_2" class="checkbox__label">Органика</label>
+								<label for="selection-checkbox_2" class="checkbox__label calculator-checkbox">Органика</label>
 							</div>
 							<div class="checkbox ">
 								<input type="checkbox" class="checkbox__input" id="selection-checkbox_3">
-								<label for="selection-checkbox_3" class="checkbox__label">Жесткость</label>
+								<label for="selection-checkbox_3" class="checkbox__label calculator-checkbox">Жесткость</label>
 							</div>
 							<div class="checkbox ">
 								<input type="checkbox" class="checkbox__input" id="selection-checkbox_4">
-								<label for="selection-checkbox_4" class="checkbox__label">Марганец</label>
+								<label for="selection-checkbox_4" class="checkbox__label calculator-checkbox">Марганец</label>
 							</div>
 							<div class="checkbox ">
 								<input type="checkbox" class="checkbox__input" id="selection-checkbox_5">
-								<label for="selection-checkbox_5" class="checkbox__label">Запах</label>
+								<label for="selection-checkbox_5" class="checkbox__label calculator-checkbox">Запах</label>
 							</div>
 						</div>
 						<div class="catalog__price">
@@ -670,8 +670,12 @@
 						</div>
 						<button type="submit" class="btn form__btn">Отправить</button>
 					</form>
-					<div class="selection__image col-lg-6 col-md-5 col-12">
-						<img src="assets/images/ready.svg" alt="" width="636px;" height="780px;">
+					<div class="selection__image col-lg-6 col-md-5 col-12 tab-content">
+						<img src="assets/images/column.svg" alt="" width="636px;" height="780px;" class="tab-item">
+						<img src="assets/images/ready.svg" alt="" width="636px;" height="780px;" class="tab-item">
+						<img src="assets/images/column.svg" alt="" width="636px;" height="780px;" class="tab-item">
+						<img src="assets/images/ready.svg" alt="" width="636px;" height="780px;" class="tab-item">
+						<img src="assets/images/column.svg" alt="" width="636px;" height="780px;" class="tab-item">
 					</div>
 				</div>
 			</div>
