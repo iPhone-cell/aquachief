@@ -4691,7 +4691,7 @@ ul li:before {
   top: 60px;
 }
 .intro__filter-left:hover {
-  transform: translateX(-70%) scale(1.05);
+  transform: translateX(-200px) scale(1.05);
   color: #004E9C;
 }
 .intro__filter-left div {
@@ -4708,7 +4708,7 @@ ul li:before {
   top: 60px;
 }
 .intro__filter-right:hover {
-  transform: translateX(70%) scale(1.05);
+  transform: translateX(200px) scale(1.05);
   color: #004E9C;
 }
 .intro__filter-right div {
@@ -4743,7 +4743,7 @@ ul li:before {
   top: 92%;
 }
 .intro__tank:hover {
-  transform: translateY(-13%) scale(1.05);
+  transform: translateX(215px) scale(1.05);
   color: #004E9C;
 }
 .intro__tank div {
@@ -5221,9 +5221,12 @@ input[type=text]::placeholder {
 }
 
 .checkbox__input {
-  -webkit-appearance: none;
-  appearance: none;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
   position: absolute;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .checkbox__label {
@@ -5338,6 +5341,7 @@ label {
   max-width: 636px;
   max-height: 780px;
   width: 100%;
+  padding-left: 40px;
 }
 
 .selection__form {
@@ -5513,7 +5517,7 @@ input[type=file] {
     max-width: 480px;
   }
   #markers {
-    top: 18px;
+    top: 11px;
     margin-left: 25px;
   }
   .selection__range {
@@ -5661,7 +5665,7 @@ input[type=file] {
   }
   .hamburger span {
     display: block;
-    height: 1.75px;
+    height: 1.5px;
     width: 100%;
     background-color: #004E9C;
     margin-bottom: 4px;
@@ -5827,8 +5831,8 @@ input[type=file] {
   }
   #markers {
     max-width: 420px;
-    top: 16px;
-    margin-left: 38px;
+    top: 10px;
+    margin-left: 24px;
   }
   .catalog {
     padding-bottom: 30px;
@@ -6227,9 +6231,13 @@ input[type=file] {
     width: 220px;
   }
   #markers {
-    width: 230px;
-    margin-left: 20px;
-    top: 15px;
+    width: 220px;
+    margin-left: 25px;
+    top: 10px;
+  }
+  .checkbox__label:after {
+    top: 20px;
+    left: 20px;
   }
   .selection__checkbox-wrapper {
     display: flex;
@@ -6297,5 +6305,8 @@ input[type=file] {
     width: 20px !important;
     height: 20px !important;
     background-position: center center !important;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(1px) rotate(45deg);
   }
 }
