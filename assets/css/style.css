@@ -6069,8 +6069,8 @@ ul li:before {
 }
 
 .intro__filter-left:hover {
-    -webkit-transform: translateX(-70%) scale(1.05);
-    transform: translateX(-70%) scale(1.05);
+    -webkit-transform: translateX(-200px) scale(1.05);
+    transform: translateX(-200px) scale(1.05);
     color: #004E9C;
 }
 
@@ -6090,8 +6090,8 @@ ul li:before {
 }
 
 .intro__filter-right:hover {
-    -webkit-transform: translateX(70%) scale(1.05);
-    transform: translateX(70%) scale(1.05);
+    -webkit-transform: translateX(200px) scale(1.05);
+    transform: translateX(200px) scale(1.05);
     color: #004E9C;
 }
 
@@ -6133,8 +6133,8 @@ ul li:before {
 }
 
 .intro__tank:hover {
-    -webkit-transform: translateY(-13%) scale(1.05);
-    transform: translateY(-13%) scale(1.05);
+    -webkit-transform: translateX(215px) scale(1.05);
+    transform: translateX(215px) scale(1.05);
     color: #004E9C;
 }
 
@@ -6594,7 +6594,7 @@ ul li:before {
 
 .modal .modal__wrapper {
     max-width: 684px;
-    max-height: 816px;
+    height: 100vh;
     margin: 0 auto;
 }
 
@@ -6808,6 +6808,7 @@ label {
     max-width: 636px;
     max-height: 780px;
     width: 100%;
+    padding-left: 40px;
 }
 
 .selection__form {
@@ -7015,7 +7016,7 @@ input[type=file] {
     }
 
     #markers {
-        top: 18px;
+        top: 11px;
         margin-left: 25px;
     }
 
@@ -7040,6 +7041,10 @@ input[type=file] {
     .process__main {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    }
+
+    .process__info {
+        margin: 0 auto;
     }
 
     .process__info ol li {
@@ -7209,7 +7214,7 @@ input[type=file] {
 
     .hamburger span {
         display: block;
-        height: 1.75px;
+        height: 1.5px;
         width: 100%;
         background-color: #004E9C;
         margin-bottom: 4px;
@@ -7340,6 +7345,8 @@ input[type=file] {
 
     .process__info {
         max-width: 520px;
+        margin: 0 auto;
+        margin-top: 24px;
     }
 
     .process__info ol li {
@@ -7430,8 +7437,8 @@ input[type=file] {
 
     #markers {
         max-width: 420px;
-        top: 16px;
-        margin-left: 38px;
+        top: 10px;
+        margin-left: 24px;
     }
 
     .catalog {
@@ -7948,9 +7955,14 @@ input[type=file] {
     }
 
     #markers {
-        width: 230px;
-        margin-left: 20px;
-        top: 15px;
+        width: 220px;
+        margin-left: 25px;
+        top: 10px;
+    }
+
+    .checkbox__label:after {
+        top: 20px;
+        left: 20px;
     }
 
     .selection__checkbox-wrapper {
@@ -8049,5 +8061,10 @@ input[type=file] {
         width: 20px !important;
         height: 20px !important;
         background-position: center center !important;
+    }
+
+    .hamburger_active span:nth-child(3) {
+        -webkit-transform: translateY(1px) rotate(45deg);
+        transform: translateY(1px) rotate(45deg);
     }
 }

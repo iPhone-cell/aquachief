@@ -5165,7 +5165,6 @@ ul li:before {
 }
 .modal .modal__wrapper {
   max-width: 684px;
-  max-height: 816px;
   margin: 0 auto;
 }
 .modal .modal__wrapper h2 {
@@ -5425,6 +5424,68 @@ input[type=file] {
   color: #fff;
 }
 
+@media (max-height: 800px) {
+  .modal {
+    min-height: 100px;
+    margin-top: 0;
+    padding-top: 24px !important;
+    padding-bottom: 32px !important;
+    max-height: 800px !important;
+  }
+  .modal .form__btn {
+    height: 72px;
+  }
+  .modal__wrapper h2 {
+    margin-bottom: 24px !important;
+  }
+  .modal__wrapper .checkbox {
+    margin-bottom: 16px;
+  }
+  .modal__wrapper input[type=text] {
+    margin: 16px 0;
+  }
+}
+@media (max-height: 740px) {
+  .modal {
+    margin-top: 0;
+    padding-top: 16px !important;
+    min-height: 100px;
+  }
+  .modal__wrapper input[type=text] {
+    margin: 16px 0;
+  }
+  .modal a.close-modal {
+    top: -20px !important;
+  }
+  .modal .modal__wrapper h2 {
+    font-size: 3.2rem !important;
+    margin-bottom: 16px;
+  }
+}
+@media (max-height: 670px) {
+  .modal .modal__wrapper .modal__form {
+    font-size: 1.8rem;
+  }
+  .modal__wrapper input[type=text] {
+    margin: 8px 0;
+    height: 48px;
+  }
+  .modal__wrapper .checkbox {
+    margin-bottom: 8px;
+  }
+  .modal .form__btn {
+    margin-top: 8px;
+    height: 60px;
+  }
+  .modal {
+    padding-bottom: 32px !important;
+    padding-top: 4px !important;
+    margin-top: 16px !important;
+  }
+  .modal .modal__wrapper h2 {
+    margin-bottom: 0;
+  }
+}
 .footer {
   padding: 40px 0;
   background: #004E9C;
@@ -5536,6 +5597,9 @@ input[type=file] {
   }
   .process__main {
     flex-wrap: wrap;
+  }
+  .process__info {
+    margin: 0 auto;
   }
   .process__info ol li {
     max-width: 700px;
@@ -5764,6 +5828,8 @@ input[type=file] {
   }
   .process__info {
     max-width: 520px;
+    margin: 0 auto;
+    margin-top: 24px;
   }
   .process__info ol li {
     max-width: 520px;
