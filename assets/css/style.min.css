@@ -5804,6 +5804,9 @@ input[type=file] {
     transform: translateX(-60%) translateY(0px);
     top: 34px;
   }
+  .intro__column:hover {
+    transform: translateX(-60%) translateY(0px);
+  }
   .intro__column div {
     width: 150px;
     top: 140px;
@@ -5817,10 +5820,19 @@ input[type=file] {
     top: 215px;
     transform: translateX(150px);
   }
+  .intro__tank:hover {
+    transform: translateX(150px);
+  }
   .intro__tank div {
     width: 150px;
     top: 45px;
     right: -140px;
+  }
+  .intro__filter-right:hover {
+    transform: translateX(130px);
+  }
+  .intro__block:hover {
+    transform: translateX(-22%);
   }
   .intro__tank img {
     width: 50%;
@@ -5870,7 +5882,11 @@ input[type=file] {
     max-width: 120px;
   }
   .footer__btn {
-    background: url("../images/mobile-callback-footer.svg");
+    background: url("../images/mobile-callback-footer.svg") no-repeat center;
+    background-color: #fff;
+  }
+  .footer__btn::before {
+    background: none;
   }
   .selection__main {
     flex-direction: column-reverse;
@@ -5983,6 +5999,9 @@ input[type=file] {
     left: 50%;
     transform: translateX(-50%);
   }
+  .intro__block:hover {
+    transform: translateX(-50%);
+  }
   .intro__block img {
     width: 44px;
     height: 34px;
@@ -5999,14 +6018,23 @@ input[type=file] {
     left: 50%;
     transform: translateX(-60px);
   }
+  .intro__filter-left:hover {
+    transform: translateX(-60px);
+  }
   .intro__filter-right {
     right: 50%;
+    transform: translateX(60px);
+  }
+  .intro__filter-right:hover {
     transform: translateX(60px);
   }
   .intro__column {
     position: absolute;
     top: 30px;
     left: 50%;
+    transform: translateX(-50%);
+  }
+  .intro__column:hover {
     transform: translateX(-50%);
   }
   .intro__column img {
@@ -6016,6 +6044,9 @@ input[type=file] {
   .intro__tank {
     position: absolute;
     top: 96%;
+    transform: translateX(74px);
+  }
+  .intro__tank:hover {
     transform: translateX(74px);
   }
   .intro__tank img {
