@@ -5944,6 +5944,9 @@ input[type=file] {
     line-height: 28px;
     top: 5px;
   }
+  .table_btn, btn.for__btn, .how-works__btn {
+    height: 64px !important;
+  }
   .checkbox.selection-checkbox {
     width: 50%;
   }
