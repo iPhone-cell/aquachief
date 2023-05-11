@@ -608,6 +608,10 @@
 				</h2>
 				<div class="selection__main tabs-wrapper">
 					<form action="post" class="selection__form col-lg-6 col-md-6 col-12">
+						<input type="hidden" name="project_name" value="AquaChief">
+						<input type="hidden" name="admin_email" value="admin@mail.com">
+						<input type="hidden" name="form_subject" value="Заявка с сайта, раздел Подобрать свой AquaChief">
+		
 						<div>
 							<label for="range">Одновременно открытых кранов</label>
 						</div>
@@ -971,20 +975,24 @@
 				и мы с вами свяжемся
 			</h2>
 			<form action="#" class="modal__form">
+				<input type="hidden" name="project_name" value="AquaChief">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="Заявка с сайта">
+	
 				<div>
 					<label for="name">Имя</label>
 				</div>
-				<input type="text" placeholder="Владимир" id="name" required>
+				<input name="name" type="text" placeholder="Владимир" id="name" required>
 				<div>
 					<label for="tel">Телефон/WhatsApp, либо username в Telegram</label>
 				</div>
-				<input type="text" placeholder="+7 (999) 123-4567" id="tel" required>
+				<input name="phone" type="text" placeholder="+7 (999) 123-4567" id="tel" required>
 				<div class="checkbox">
-					<input type="checkbox" class="checkbox__input" id="checkbox_1">
+					<input name="checkbox" type="checkbox" class="checkbox__input" id="checkbox_1">
 					<label for="checkbox_1" class="checkbox__label">Не звонить, общение только в чате</label>
 				</div>
 				<div class="checkbox checkbox-disabled">
-					<input type="checkbox" checked disabled class="checkbox__input" id="checkbox_2">
+					<input name="checkbox2" type="checkbox" checked disabled class="checkbox__input" id="checkbox_2">
 					<label for="checkbox_2" class="checkbox__label">Я соглашаюсь с <a href="#">положением об обработке <br>
 							персональных данных</a></label>
 				</div>
