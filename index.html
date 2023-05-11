@@ -654,10 +654,10 @@
 						<div>
 							<label for="selection_name">Имя</label>
 						</div>
-						<input type="text" placeholder="Владимир" id="selection_name">
+						<input type="text" placeholder="Владимир" id="selection_name" required>
 						<div>
 							<label for="selection_tel">Телефон/WhatsApp, либо username в Telegram</label>
-							<input type="text" placeholder="+7 (999) 123-4567" id="selection_tel">
+							<input type="text" placeholder="+7 (999) 123-4567" id="selection_tel" required>
 						</div>
 						<div class="checkbox">
 							<input type="checkbox" class="checkbox__input" id="selection_checkbox-not-call">
@@ -668,8 +668,8 @@
 							Если у Вас есть анализ воды, приложите его - это сделает расчет оборудования более точным
 						</div>
 						<div class="selection__file">
-							<label for="#upload">Загрузить файл</label>
-							<input type="file" id="#upload">
+							<label class="selection__file-label" for="upload">Загрузить файл</label>
+							<input type="file" id="upload">
 						</div>
 						<button type="submit" class="btn form__btn">Отправить</button>
 					</form>
@@ -973,11 +973,11 @@
 				<div>
 					<label for="name">Имя</label>
 				</div>
-				<input type="text" placeholder="Владимир" id="name">
+				<input type="text" placeholder="Владимир" id="name" required>
 				<div>
 					<label for="tel">Телефон/WhatsApp, либо username в Telegram</label>
 				</div>
-				<input type="text" placeholder="+7 (999) 123-4567" id="tel">
+				<input type="text" placeholder="+7 (999) 123-4567" id="tel" required>
 				<div class="checkbox">
 					<input type="checkbox" class="checkbox__input" id="checkbox_1">
 					<label for="checkbox_1" class="checkbox__label">Не звонить, общение только в чате</label>
