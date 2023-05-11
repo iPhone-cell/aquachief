@@ -5379,7 +5379,7 @@ label {
   left: 0;
   z-index: 1;
 }
-#markers option {
+#markers .range {
   cursor: pointer;
   -webkit-display: inline-block;
   display: inline-block;
@@ -5392,7 +5392,7 @@ label {
   border-radius: 50%;
 }
 
-#markers option.active {
+#markers .range.active {
   -webkit-display: block;
   display: block;
   background: #fff;
