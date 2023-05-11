@@ -5299,6 +5299,7 @@ input[type=text]::placeholder {
 }
 
 input[type=range] {
+  -moz-appearance: none !important;
   -webkit-appearance: none !important;
   background: #F5F5F5;
   height: 16px;
@@ -5309,6 +5310,7 @@ input[type=range] {
 }
 
 input[type=range]::-webkit-slider-thumb {
+  -moz-appearance: none !important;
   -webkit-appearance: none !important;
 }
 
@@ -6419,7 +6421,7 @@ input[type=file] {
     font-size: 1.2rem !important;
   }
   .modal a.close-modal {
-    top: -22px !important;
+    top: -24px !important;
   }
   .modal .modal__wrapper {
     padding-top: 4px !important;
