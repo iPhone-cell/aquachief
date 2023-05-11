@@ -5275,8 +5275,8 @@ input[type=text]::placeholder {
 .form__btn {
   transition: all 0.3s ease;
   border: none;
-  height: 84px;
-  line-height: 84px;
+  height: 60px;
+  line-height: 60px;
 }
 
 .modal {
@@ -5338,6 +5338,9 @@ label {
   flex-wrap: wrap;
 }
 
+.selection__image {
+  text-align: right;
+}
 .selection__image img {
   max-width: 636px;
   max-height: 780px;
@@ -5468,6 +5471,9 @@ input[type=file] {
   .container {
     padding: 0 15px;
   }
+  .selection__image img {
+    max-height: 600px;
+  }
   .good__item {
     max-width: 480px;
   }
@@ -5530,6 +5536,12 @@ input[type=file] {
   }
   .selection__range span {
     font-size: 2.8rem;
+  }
+  input[type=range] {
+    max-width: 480px;
+  }
+  #markers {
+    max-width: 480px;
   }
 }
 @media (max-width: 992px) {
@@ -5602,11 +5614,39 @@ input[type=file] {
   .modal__wrapper {
     padding: 20px;
   }
+  .selection__range {
+    max-width: 420px;
+  }
+  #markers {
+    max-width: 420px;
+    top: 44px;
+    margin-left: 15px;
+  }
+  .selection__image img {
+    max-height: 480px;
+  }
 }
 @media (max-width: 767px) {
   body {
     font-size: 1.6rem;
     line-height: 20px !important;
+  }
+  .selection__image img {
+    padding-left: 0;
+    text-align: center;
+  }
+  .selection__checkbox-wrapper {
+    margin-top: 16px;
+  }
+  .selection__range {
+    max-width: 700px !important;
+  }
+  #markers {
+    top: 9px !important;
+    margin-left: 24px !important;
+  }
+  .form__btn {
+    margin-top: 40px;
   }
   .header, .footer {
     padding: 12px 0;
@@ -5899,6 +5939,9 @@ input[type=file] {
     height: 28px;
     line-height: 28px;
     top: 5px;
+  }
+  .checkbox.selection-checkbox {
+    width: 50%;
   }
   .container {
     padding: 0 20px;
