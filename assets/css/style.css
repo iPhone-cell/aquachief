@@ -6594,7 +6594,6 @@ ul li:before {
 
 .modal .modal__wrapper {
     max-width: 684px;
-    height: 100vh;
     margin: 0 auto;
 }
 
@@ -6897,6 +6896,83 @@ input[type=file] {
 .selection__file label:hover {
     background: #004E9C;
     color: #fff;
+}
+
+@media (max-height: 800px) {
+    .modal {
+        min-height: 100px;
+        margin-top: 0;
+        padding-top: 24px !important;
+        padding-bottom: 32px !important;
+        max-height: 800px !important;
+    }
+
+    .modal .form__btn {
+        height: 72px;
+    }
+
+    .modal__wrapper h2 {
+        margin-bottom: 24px !important;
+    }
+
+    .modal__wrapper .checkbox {
+        margin-bottom: 16px;
+    }
+
+    .modal__wrapper input[type=text] {
+        margin: 16px 0;
+    }
+}
+
+@media (max-height: 740px) {
+    .modal {
+        margin-top: 0;
+        padding-top: 16px !important;
+        min-height: 100px;
+    }
+
+    .modal__wrapper input[type=text] {
+        margin: 16px 0;
+    }
+
+    .modal a.close-modal {
+        top: -20px !important;
+    }
+
+    .modal .modal__wrapper h2 {
+        font-size: 3.2rem !important;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-height: 670px) {
+    .modal .modal__wrapper .modal__form {
+        font-size: 1.8rem;
+    }
+
+    .modal__wrapper input[type=text] {
+        margin: 8px 0;
+        height: 48px;
+    }
+
+    .modal__wrapper .checkbox {
+        margin-bottom: 8px;
+    }
+
+    .modal .form__btn {
+        margin-top: 8px;
+        height: 60px;
+    }
+
+    .modal {
+        padding-bottom: 32px !important;
+        padding-top: 4px !important;
+        margin-top: 16px !important;
+    }
+
+    .modal .modal__wrapper h2 {
+        margin-bottom: 0;
+    }
 }
 
 .footer {
@@ -7315,6 +7391,11 @@ input[type=file] {
         top: 34px;
     }
 
+    .intro__column:hover {
+        -webkit-transform: translateX(-60%) translateY(0px);
+        transform: translateX(-60%) translateY(0px);
+    }
+
     .intro__column div {
         width: 150px;
         top: 140px;
@@ -7332,10 +7413,25 @@ input[type=file] {
         transform: translateX(150px);
     }
 
+    .intro__tank:hover {
+        -webkit-transform: translateX(150px);
+        transform: translateX(150px);
+    }
+
     .intro__tank div {
         width: 150px;
         top: 45px;
         right: -140px;
+    }
+
+    .intro__filter-right:hover {
+        -webkit-transform: translateX(130px);
+        transform: translateX(130px);
+    }
+
+    .intro__block:hover {
+        -webkit-transform: translateX(-22%);
+        transform: translateX(-22%);
     }
 
     .intro__tank img {
@@ -7400,7 +7496,12 @@ input[type=file] {
     }
 
     .footer__btn {
-        background: url("../images/mobile-callback-footer.svg");
+        background: url("../images/mobile-callback-footer.svg") no-repeat center;
+        background-color: #fff;
+    }
+
+    .footer__btn::before {
+        background: none;
     }
 
     .selection__main {
@@ -7545,6 +7646,11 @@ input[type=file] {
         transform: translateX(-50%);
     }
 
+    .intro__block:hover {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
     .intro__block img {
         width: 44px;
         height: 34px;
@@ -7566,8 +7672,18 @@ input[type=file] {
         transform: translateX(-60px);
     }
 
+    .intro__filter-left:hover {
+        -webkit-transform: translateX(-60px);
+        transform: translateX(-60px);
+    }
+
     .intro__filter-right {
         right: 50%;
+        -webkit-transform: translateX(60px);
+        transform: translateX(60px);
+    }
+
+    .intro__filter-right:hover {
         -webkit-transform: translateX(60px);
         transform: translateX(60px);
     }
@@ -7580,6 +7696,11 @@ input[type=file] {
         transform: translateX(-50%);
     }
 
+    .intro__column:hover {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
     .intro__column img {
         width: 46px;
         height: 246px;
@@ -7588,6 +7709,11 @@ input[type=file] {
     .intro__tank {
         position: absolute;
         top: 96%;
+        -webkit-transform: translateX(74px);
+        transform: translateX(74px);
+    }
+
+    .intro__tank:hover {
         -webkit-transform: translateX(74px);
         transform: translateX(74px);
     }
