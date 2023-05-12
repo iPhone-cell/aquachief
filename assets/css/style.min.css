@@ -5318,6 +5318,11 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none !important;
 }
 
+.selection__form {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
 .selection__form span {
   font-weight: 300;
   font-size: 4rem;
@@ -5368,9 +5373,37 @@ label {
   margin-top: 80px;
 }
 
+.selection input[type=text] {
+  max-width: 620px;
+}
+
 .selection__range {
   position: relative;
   z-index: 2;
+  margin-top: 14px;
+  margin-bottom: 24px;
+}
+
+.selection__checkbox-wrapper {
+  margin-top: 18px;
+  margin-bottom: 28px;
+}
+
+.selection__checkbox-wrapper .checkbox {
+  margin-bottom: 12px;
+}
+.selection__checkbox-wrapper .checkbox:last-child {
+  margin-bottom: 0;
+}
+
+.selection label {
+  font-size: 1.8rem;
+}
+
+.selection__checkbox-wrapper .checkbox__label:before {
+  width: 36px;
+  height: 36px;
+  top: 2px;
 }
 
 #markers {
@@ -5551,6 +5584,14 @@ input[type=file] {
   #markers {
     max-width: 480px;
   }
+  .selection__form {
+    font-size: 2rem;
+  }
+  .selection__form .checkbox__label:before {
+    width: 36px;
+    height: 36px;
+    top: 0;
+  }
 }
 @media (max-width: 992px) {
   .header__messengers, .footer__messengers {
@@ -5636,6 +5677,31 @@ input[type=file] {
   .intro__text {
     max-width: 640px;
   }
+  .selection__title {
+    margin-bottom: 40px;
+  }
+  .selection__range span {
+    font-size: 2rem;
+  }
+  #markers {
+    top: 7px;
+    max-width: 400px;
+    margin-left: 22px;
+  }
+  #markers .range {
+    width: 18px;
+    height: 20px;
+  }
+  .selection__range {
+    max-width: 460px;
+  }
+  input[type=range] {
+    max-width: 400px;
+  }
+  .form__btn {
+    margin-top: 24px;
+    height: 64px;
+  }
 }
 @media (max-width: 767px) {
   body {
@@ -5653,7 +5719,7 @@ input[type=file] {
     max-width: 700px !important;
   }
   #markers {
-    top: 9px !important;
+    top: 9px;
     margin-left: 24px !important;
   }
   .form__btn {
@@ -5924,6 +5990,20 @@ input[type=file] {
   }
   .modal a.close-modal {
     left: 98% !important;
+  }
+  .selection__form .checkbox__label:before {
+    width: 28px;
+    height: 28px;
+    top: 4px;
+  }
+  .selection__image {
+    margin-bottom: 40px;
+  }
+  .selection__form {
+    font-size: 1.4rem;
+  }
+  .selection label {
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 575px) {
@@ -6407,6 +6487,35 @@ input[type=file] {
   }
   .hamburger_active span:nth-child(3) {
     transform: translateY(1px) rotate(45deg);
+  }
+  #markers {
+    top: 12px;
+  }
+  #markers .range {
+    width: 20px;
+    height: 20px;
+  }
+  #markers .range.active {
+    width: 28px;
+    height: 28px;
+  }
+  .selection__form .checkbox__label:before {
+    top: 0;
+  }
+  .selection__range {
+    margin: 8px 0 8px;
+  }
+  .selection__form input {
+    margin-bottom: 16px;
+  }
+  .selection__form .checkbox {
+    margin-bottom: 16px;
+  }
+  .selection__file {
+    margin-top: 16px;
+  }
+  .selection .form__btn {
+    margin-top: 16px;
   }
 }
 @media (max-height: 900px) {
