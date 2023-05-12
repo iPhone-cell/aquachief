@@ -8329,6 +8329,10 @@ input[type=file] {
     .selection .form__btn {
         margin-top: 16px;
     }
+
+    .selection__title {
+        margin-bottom: 16px;
+    }
 }
 
 @media (max-height: 900px) {
