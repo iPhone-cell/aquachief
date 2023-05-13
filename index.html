@@ -607,23 +607,34 @@
 					Подобрать свой AquaChief
 				</h2>
 				<div class="selection__main tabs-wrapper">
-					<form action="post" class="selection__form col-lg-6 col-md-6 col-12">
-						<input type="hidden" name="project_name" value="AquaChief">
-						<input type="hidden" name="admin_email" value="admin@mail.com">
-						<input type="hidden" name="form_subject" value="Заявка с сайта, раздел Подобрать свой AquaChief">
+					<form action="#" id="form" class="selection__form col-lg-6 col-md-6 col-12 form">
 		
 						<div>
 							<label for="range">Одновременно открытых кранов</label>
 						</div>
 						<div class="selection__range">
-							<span>1</span><input type="range" id="range" min="1" max="5" name="range"
-								list="markers"><span>5</span>
+							<span>1</span><input type="range" id="range" min="1" max="5" list="markers"><span>5</span>
 							<div id="markers" class="tabs">
-								<span class="tab range range1" data-name="range1" id="range1"></span>
-								<span class="tab range" data-name="range2" id="range2"></span>
-								<span class="tab range" data-name="range3" id="range3"></span>
-								<span class="tab range" data-name="range4" id="range4"></span>
-								<span class="tab range" data-name="range5" id="range5"></span>
+								<div class="options__item tab">
+									<input type="radio" name="range" value="1" readonly class=" range range1" id="range1">
+									<label for="range1" class="options__label"></label>
+								</div>
+								<div class="options__item tab">
+									<input type="radio" name="range" value="2" readonly class=" range" id="range2">
+									<label for="range2" class="options__label"></label>
+								</div>
+								<div class="options__item tab">
+									<input type="radio" name="range" value="3" readonly class=" range" id="range3">
+									<label for="range3" class="options__label"></label>
+								</div>
+								<div class="options__item tab">
+									<input type="radio" name="range" value="4" readonly class=" range" id="range4">
+									<label for="range4" class="options__label"></label>
+								</div>
+								<div class="options__item tab">
+									<input type="radio" name="range" value="5" readonly class=" range" id="range5">
+									<label for="range5" class="options__label"></label>
+								</div>
 							</div>
 						</div>
 						<div>
@@ -631,50 +642,56 @@
 						</div>
 						<div class="selection__checkbox-wrapper">
 							<div class="checkbox selection-checkbox" data-name="option1">
-								<input type="checkbox" class="checkbox__input option" id="option1">
+								<input name="option1" type="checkbox" class="checkbox__input option" id="option1">
 								<label for="option1" class="checkbox__label calculator-checkbox">Железо</label>
 							</div>
 							<div class="checkbox selection-checkbox option" data-name="option2">
-								<input type="checkbox" class="checkbox__input" id="option2">
+								<input name="option2" type="checkbox" class="checkbox__input" id="option2">
 								<label for="option2" class="checkbox__label calculator-checkbox">Органика</label>
 							</div>
 							<div class="checkbox selection-checkbox option" data-name="option3">
-								<input type="checkbox" class="checkbox__input" id="option3">
+								<input name="option3" type="checkbox" class="checkbox__input" id="option3">
 								<label for="option3" class="checkbox__label calculator-checkbox">Жесткость</label>
 							</div>
 							<div class="checkbox selection-checkbox option" data-name="option4">
-								<input type="checkbox" class="checkbox__input" id="option4">
+								<input name="option4" type="checkbox" class="checkbox__input" id="option4">
 								<label for="option4" class="checkbox__label calculator-checkbox">Марганец</label>
 							</div>
 							<div class="checkbox selection-checkbox option" data-name="option5">
-								<input type="checkbox" class="checkbox__input" id="option5">
+								<input name="option5" type="checkbox" class="checkbox__input" id="option5">
 								<label for="option5" class="checkbox__label calculator-checkbox">Запах</label>
 							</div>
 						</div>
 						<div class="catalog__price">
 							от
-							<output id="total">9500</output>
+							<output id="total" name="price">9500</output>
 							руб
 						</div>
 						<div>
 							<label for="selection_name">Имя</label>
 						</div>
-						<input type="text" placeholder="Владимир" id="selection_name" required>
+						<input name="name" type="text" placeholder="Владимир" id="selection_name" required>
 						<div>
 							<label for="selection_tel">Телефон/WhatsApp, либо username в Telegram</label>
-							<input type="text" placeholder="+7 (999) 123-4567" id="selection_tel" required>
+							<input name="contact" type="text" placeholder="+7 (999) 123-4567" id="selection_tel" required>
 						</div>
 						<div class="checkbox">
-							<input type="checkbox" class="checkbox__input" id="selection_checkbox-not-call">
+							<input name="noCall" type="checkbox" class="checkbox__input" id="selection_checkbox-not-call">
 							<label for="selection_checkbox-not-call" class="checkbox__label">Не звонить, общение только в
 								чате</label>
+						</div>
+						<div class="checkbox checkbox-disabled">
+							<input name="agreement" type="checkbox" checked disabled class="checkbox__input" id="agreement">
+							<label for="agreement" class="checkbox__label">Я соглашаюсь с <a href="#">положением об обработке
+									<br>
+									персональных данных</a></label>
 						</div>
 						<div>
 							Если у Вас есть анализ воды, приложите его - это сделает расчет оборудования более точным
 						</div>
 						<div class="selection__file">
 							<label class="selection__file-label" for="upload">Загрузить файл</label>
-							<input type="file" id="upload">
+							<input name="upload" type="file" id="upload">
 						</div>
 						<button type="submit" class="btn form__btn">Отправить</button>
 					</form>
@@ -974,26 +991,28 @@
 				Заполните форму
 				и мы с вами свяжемся
 			</h2>
-			<form action="#" class="modal__form">
+			<form class="modal__form">
+				<!-- Hidden Required Fields -->
 				<input type="hidden" name="project_name" value="AquaChief">
-				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="admin_email" value="info@aqua76.ru">
 				<input type="hidden" name="form_subject" value="Заявка с сайта">
+				<!-- END Hidden Required Fields -->
 	
 				<div>
 					<label for="name">Имя</label>
 				</div>
-				<input name="name" type="text" placeholder="Владимир" id="name" required>
+				<input name="Имя:" type="text" placeholder="Владимир" id="name" required>
 				<div>
 					<label for="tel">Телефон/WhatsApp, либо username в Telegram</label>
 				</div>
-				<input name="phone" type="text" placeholder="+7 (999) 123-4567" id="tel" required>
+				<input name="Контакты:" type="text" placeholder="+7 (999) 123-4567" id="tel" required>
 				<div class="checkbox">
-					<input name="checkbox" type="checkbox" class="checkbox__input" id="checkbox_1">
+					<input name="Не звонить" type="checkbox" class="checkbox__input" id="checkbox_1">
 					<label for="checkbox_1" class="checkbox__label">Не звонить, общение только в чате</label>
 				</div>
 				<div class="checkbox checkbox-disabled">
-					<input name="checkbox2" type="checkbox" checked disabled class="checkbox__input" id="checkbox_2">
-					<label for="checkbox_2" class="checkbox__label">Я соглашаюсь с <a href="#">положением об обработке <br>
+					<input name="agreement" type="checkbox" checked disabled class="checkbox__input" id="agreement">
+					<label for="agreement" class="checkbox__label">Я соглашаюсь с <a href="#">положением об обработке <br>
 							персональных данных</a></label>
 				</div>
 				<button type="submit" class="btn form__btn">Отправить</button>
