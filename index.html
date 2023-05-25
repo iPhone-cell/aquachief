@@ -6,9 +6,39 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.min.css">
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	
+		ym(93357189, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/93357189" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-L5KWBCN0BG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+	
+		gtag('config', 'G-L5KWBCN0BG');
+	</script>
 	
 	<!-- Useful meta tags -->
-	<link rel="icon" type="image/png" href="assets/images/favicon.png" />
+	<link rel="icon" href="https://aquachief.ru/assets/images/favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="robots" content="index, follow">
@@ -20,7 +50,7 @@
 	
 	<title>AquaChief</title></head>
 
-<body>
+<body class="body">
 
 	<header class="header">
 		<div class="container">
@@ -29,7 +59,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-5 col-6 header__logo">
 						<img src="assets/images/header/logo.svg" alt="AquaChief - система водоочистки">
 					</div>
-					<div class="offset-lg-2 offset-md-1 col-sm-ms-auto col-lg-2 col-md-3 col-sm-3 col-4 header__messengers">
+					<div class="offset-lg-2 offset-md-1 col-sm-ms-auto col-lg-3 col-md-3 col-sm-3 col-4 header__messengers">
 						<a href="https://wa.me/79051390997" target="_blank">
 							<img src="assets/images/header/whatsapp.svg" alt="WhatsApp">
 						</a>
@@ -38,7 +68,7 @@
 						</a>
 					</div>
 					<div class="ms-auto col-lg-3 col-md-4 col-sm-3 col-2">
-						<a href="#popup" rel="modal:open" class="btn blue">Заказать звонок</a>
+						<a href="#popup" rel="modal:open" class="btn blue popup-link">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -92,19 +122,32 @@
 							<div>блок автоматики RunXin</div>
 						</a>
 						<a href="#howFilter" class="intro__filter-left">
-							<img src="assets/images/intro/filter-left.svg" alt="">
+							<picture>
+								<source srcset="assets/images/intro/filter-left.webp" type="image/svg+xml">
+								<img src="assets/images/intro/filter-left.jpg" alt="">
+							</picture>
+		
 							<div>фильтр механической очистки</div>
 						</a>
 						<a href="#howFilter2" class="intro__filter-right">
-							<img src="assets/images/intro/filter-right.svg" alt="">
+							<picture>
+								<source srcset="assets/images/intro/filter-right.webp" type="image/svg+xml">
+								<img src="assets/images/intro/filter-right.jpg" alt="">
+							</picture>
 							<div>угольный пост фильтр</div>
 						</a>
 						<a href="#howColumn" class="intro__column">
-							<img src="assets/images/intro/column.svg" alt="">
+							<picture>
+								<source srcset="assets/images/intro/column.webp" type="image/svg+xml">
+								<img src="assets/images/intro/column.jpg" alt="">
+							</picture>
 							<div>колонна с ионообменной смолой</div>
 						</a>
 						<a href="#howTank" class="intro__tank">
-							<img src="assets/images/intro/tank.svg" alt="">
+							<picture>
+								<source srcset="assets/images/intro/tank.webp" type="image/svg+xml">
+								<img src="assets/images/intro/tank.jpg" alt="">
+							</picture>
 							<div>солевой бак</div>
 						</a>
 					</div>
@@ -141,7 +184,11 @@
 						</div>
 						<div class="how__section-info position-1" id="howFilter">
 							<div class="how__section-image">
-								<img src="assets/images/filter.svg" alt="">
+								<picture>
+									<source srcset="assets/images/filter.webp" type="image/svg+xml">
+									<img src="assets/images/filter.jpg" alt="">
+								</picture>
+		
 							</div>
 							<div class="how__section-text">
 								<h3 class="title">
@@ -174,7 +221,11 @@
 								</div>
 							</div>
 							<div class="how__section-image">
-								<img src="assets/images/column.svg" alt="">
+								<picture>
+									<source srcset="assets/images/column.webp" type="image/svg+xml">
+									<img src="assets/images/column.jpg" alt="">
+								</picture>
+		
 							</div>
 						</div>
 						<div class="how__section-info position-2">
@@ -188,7 +239,10 @@
 								</div>
 							</div>
 							<div class="how__section-image" id="processBlock">
-								<img src="assets/images/block.svg" alt="">
+								<picture>
+									<source srcset="assets/images/block.webp" type="image/svg+xml">
+									<img src="assets/images/block.jpg" alt="">
+								</picture>
 							</div>
 						</div>
 						<div class="how__section-info position-2" id="howTank">
@@ -202,7 +256,10 @@
 								</div>
 							</div>
 							<div class="how__section-image">
-								<img src="assets/images/tank.svg" alt="">
+								<picture>
+									<source srcset="assets/images/tank.webp" type="image/svg+xml">
+									<img src="assets/images/tank.jpg" alt="">
+								</picture>
 							</div>
 						</div>
 					</div>
@@ -213,7 +270,10 @@
 						</div>
 						<div class="how__section-info position-1" id="howFilter2">
 							<div class="how__section-image">
-								<img src="assets/images/filter.svg" alt="">
+								<picture>
+									<source srcset="assets/images/filter.webp" type="image/svg+xml">
+									<img src="assets/images/filter.jpg" alt="">
+								</picture>
 							</div>
 							<div class="how__section-text">
 								<h3 class="title">
@@ -227,7 +287,10 @@
 						</div>
 						<div class="how__section-info position-1">
 							<div class="how__section-image">
-								<img src="assets/images/smell.svg" alt="">
+								<picture>
+									<source srcset="assets/images/smell.webp" type="image/svg+xml">
+									<img src="assets/images/smell.jpg" alt="">
+								</picture>
 							</div>
 							<div class="how__section-text">
 								<h3 class="title">
@@ -320,7 +383,12 @@
 				</h2>
 				<div class="work__main d-flex justify-content-between">
 					<div class="work__img">
-						<img src="assets/images/work/work.svg" alt="">
+						<a href="assets/images/work/work.svg" target="_blank">
+							<picture>
+								<source srcset="assets/images/work/work.webp" type="image/svg+xml">
+								<img src="assets/images/work/work.jpg" alt="">
+							</picture>
+						</a>
 					</div>
 					<div class="work__info">
 						<p>
@@ -371,7 +439,7 @@
 						Для оптимального подбора ионообменной смолы
 						требуется консультация специалиста
 					</div>
-					<a href="#popup" rel="modal:open" class="btn table_btn">Получить консультация</a>
+					<a href="#popup" rel="modal:open" class="btn table_btn">Получить консультацию</a>
 				</div>
 			</div>
 		</section>
@@ -454,34 +522,34 @@
 				<h2 class="title requirements__title">
 					Требования к месту монтажа
 				</h2>
-				<ol class="requirements__main">
-					<li class="requirements__item">
+				<ol class="requirements__main row">
+					<li class="requirements__item col-md-4">
 						В помещении есть участок трубопровода под врезку
 					</li>
-					<li class="requirements__item">
+					<li class="requirements__item col-md-4">
 						Давление в системе водоснабжения находится в диапазоне 2..5 атм
 					</li>
-					<li class="requirements__item">
+					<li class="requirements__item col-md-4">
 						Наличие канализационного
 						(40/50 мм) отвода
 						под промывку системы
 					</li>
-					<li class="requirements__item">
+					<li class="requirements__item col-md-4">
 						При очистке воды
 						из скважины, обеспечить дебит
 						не менее 1.5 м3/час
 					</li>
-					<li class="requirements__item">
+					<li class="requirements__item col-md-4">
 						Исключить попадание прямого солнечного света на систему очистки воды
 					</li>
-					<li class="requirements__item">
+					<li class="requirements__item col-md-4">
 						Наличие на стене одной розетки (220В) в месте установки системы
 					</li>
-					<li class="requirements__item">
+					<li class="requirements__item col-md-4">
 						Температурный <br>
 						режим +5..+30 C
 					</li>
-					<li class="requirements__item">
+					<li class="requirements__item col-md-8">
 						Отсутствие посторонних предметов, мешающих проведению монтажа
 						и прочих физических препятствий (высота помещения, навесные предметы)
 						для размещения системы очистки
@@ -498,7 +566,10 @@
 				<div class="row catalog__inner">
 					<div class="col-md-4 catalog__item">
 						<div class="catalog__top">
-							<img src="assets/images/product_1.svg" alt="AquaChief-SX">
+							<picture>
+								<source srcset="assets/images/product_1.webp" type="image/svg+xml">
+								<img src="assets/images/product_1.jpg" alt="AquaChief-SX">
+							</picture>
 						</div>
 						<h3 class="catalog__subtitle">
 							AquaChief-SX
@@ -530,7 +601,10 @@
 					</div>
 					<div class="col-md-4 catalog__item">
 						<div class="catalog__top">
-							<img src="assets/images/product_2.svg" alt="AquaChief-FE">
+							<picture>
+								<source srcset="assets/images/product_2.webp" type="image/svg+xml">
+								<img src="assets/images/product_2.jpg" alt="AquaChief-SX">
+							</picture>
 						</div>
 						<h3 class="catalog__subtitle">
 							AquaChief-FE
@@ -562,7 +636,10 @@
 					</div>
 					<div class="col-md-4 catalog__item">
 						<div class="catalog__top">
-							<img src="assets/images/product_3.svg" alt="Aquachief-ZX">
+							<picture>
+								<source srcset="assets/images/product_3.webp" type="image/svg+xml">
+								<img src="assets/images/product_3.jpg" alt="AquaChief-SX">
+							</picture>
 						</div>
 						<h3 class="catalog__subtitle">
 							Aquachief-ZX
@@ -607,33 +684,33 @@
 					Подобрать свой AquaChief
 				</h2>
 				<div class="selection__main tabs-wrapper">
-					<form action="#" id="form" class="selection__form col-lg-6 col-md-6 col-12 form">
+					<form action="#" id="form" class="selection__form col-lg-7 col-md-7 col-12 form">
 		
 						<div>
 							<label for="range">Одновременно открытых кранов</label>
 						</div>
 						<div class="selection__range">
-							<span>1</span><input type="range" id="range" min="1" max="5" list="markers"><span>5</span>
+							<input type="range" id="range" min="1" max="5" list="markers">
 							<div id="markers" class="tabs">
-								<div class="options__item tab">
-									<input type="radio" name="range" value="1" readonly class=" range range1" id="range1">
+								<div class="options__item tab tab1">
+									<input type="radio" name="range" value="1" readonly class="range range1" id="range1">
 									<label for="range1" class="options__label"></label>
+									<div>1</div>
 								</div>
-								<div class="options__item tab">
-									<input type="radio" name="range" value="2" readonly class=" range" id="range2">
+								<div class="options__item tab tab2">
+									<input type="radio" name="range" value="2" readonly class="range" id="range2">
 									<label for="range2" class="options__label"></label>
+									<div>2-3</div>
 								</div>
-								<div class="options__item tab">
-									<input type="radio" name="range" value="3" readonly class=" range" id="range3">
+								<div class="options__item tab tab3">
+									<input type="radio" name="range" value="3" readonly class="range" id="range3">
 									<label for="range3" class="options__label"></label>
+									<div>3-4</div>
 								</div>
-								<div class="options__item tab">
-									<input type="radio" name="range" value="4" readonly class=" range" id="range4">
+								<div class="options__item tab tab4">
+									<input type="radio" name="range" value="4" readonly class="range" id="range4">
 									<label for="range4" class="options__label"></label>
-								</div>
-								<div class="options__item tab">
-									<input type="radio" name="range" value="5" readonly class=" range" id="range5">
-									<label for="range5" class="options__label"></label>
+									<div>4-5</div>
 								</div>
 							</div>
 						</div>
@@ -642,24 +719,29 @@
 						</div>
 						<div class="selection__checkbox-wrapper">
 							<div class="checkbox selection-checkbox" data-name="option1">
-								<input name="option1" type="checkbox" class="checkbox__input option" id="option1">
-								<label for="option1" class="checkbox__label calculator-checkbox">Железо</label>
+								<input name="option1" type="checkbox" class="checkbox__input option option1" id="option1">
+								<label for="option1" class="checkbox__label calculator-checkbox">Железо, жесткость,
+									марганец</label>
 							</div>
-							<div class="checkbox selection-checkbox option" data-name="option2">
+							<div class="checkbox selection-checkbox option option2" data-name="option2">
 								<input name="option2" type="checkbox" class="checkbox__input" id="option2">
-								<label for="option2" class="checkbox__label calculator-checkbox">Органика</label>
+								<label for="option2" class="checkbox__label calculator-checkbox">Мех. очистка</label>
 							</div>
-							<div class="checkbox selection-checkbox option" data-name="option3">
+							<!-- <div class="checkbox selection-checkbox option option1" data-name="option1">
 								<input name="option3" type="checkbox" class="checkbox__input" id="option3">
 								<label for="option3" class="checkbox__label calculator-checkbox">Жесткость</label>
-							</div>
-							<div class="checkbox selection-checkbox option" data-name="option4">
+							</div> -->
+							<!-- <div class="checkbox selection-checkbox option option1" data-name="option1">
 								<input name="option4" type="checkbox" class="checkbox__input" id="option4">
 								<label for="option4" class="checkbox__label calculator-checkbox">Марганец</label>
-							</div>
-							<div class="checkbox selection-checkbox option" data-name="option5">
+							</div> -->
+							<div class="checkbox selection-checkbox option option3" data-name="option5">
 								<input name="option5" type="checkbox" class="checkbox__input" id="option5">
 								<label for="option5" class="checkbox__label calculator-checkbox">Запах</label>
+							</div>
+							<div class="checkbox selection-checkbox option option6" data-name="option5">
+								<input name="option6" type="checkbox" class="checkbox__input" id="option6">
+								<label for="option6" class="checkbox__label calculator-checkbox">Запах, привкус, хлор</label>
 							</div>
 						</div>
 						<div class="catalog__price">
@@ -695,12 +777,23 @@
 						</div>
 						<button type="submit" class="btn form__btn">Отправить</button>
 					</form>
-					<div class="selection__image col-lg-6 col-md-5 col-12 tab-content">
-						<img src="assets/images/product_1.svg" alt="" width="636px;" height="780px;" class="tab-item">
-						<img src="assets/images/product_2.svg" alt="" width="636px;" height="780px;" class="tab-item">
-						<img src="assets/images/product_2.svg" alt="" width="636px;" height="780px;" class="tab-item">
-						<img src="assets/images/product_3.svg" alt="" width="636px;" height="780px;" class="tab-item">
-						<img src="assets/images/product_3.svg" alt="" width="636px;" height="780px;" class="tab-item">
+					<div class="selection__image col-lg-5 col-md-5 col-12 tab-content">
+						<picture class="tab-item">
+							<source srcset="assets/images/product_1.webp" type="image/svg+xml">
+							<img src="assets/images/product_1.jpg" alt="">
+						</picture>
+						<picture class="tab-item">
+							<source srcset="assets/images/product_2.webp" type="image/svg+xml">
+							<img src="assets/images/product_2.jpg" alt="">
+						</picture>
+						<picture class="tab-item">
+							<source srcset="assets/images/product_2.webp" type="image/svg+xml">
+							<img src="assets/images/product_2.jpg" alt="">
+						</picture>
+						<picture class="tab-item">
+							<source srcset="assets/images/product_3.webp" type="image/svg+xml">
+							<img src="assets/images/product_3.jpg" alt="">
+						</picture>
 					</div>
 				</div>
 			</div>
@@ -1012,11 +1105,18 @@
 				</div>
 				<div class="checkbox checkbox-disabled">
 					<input name="agreement" type="checkbox" checked disabled class="checkbox__input" id="agreement">
-					<label for="agreement" class="checkbox__label">Я соглашаюсь с <a href="#">положением об обработке <br>
+					<label for="agreement" class="checkbox__label">Я соглашаюсь с <a href="#">положением об обработке
 							персональных данных</a></label>
 				</div>
 				<button type="submit" class="btn form__btn">Отправить</button>
 			</form>
+		</div>
+	</div>
+	<div class="overlay js-overlay-thank-you">
+		<div class="popup js-thank-you">
+			<h2>Спасибо, заявка успешно отправлена!</h2>
+			<div>С вами свяжутся в ближайшее время</div>
+			<div class="close-popup js-close-thank-you"></div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -1024,35 +1124,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 	<script src="assets/js/app.js"></script>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i]function() { (m[i].a = m[i].a[]).push(arguments) };
-			m[i].l = 1 * new Date();
-			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-		})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-		ym(93357189, "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true
-		});
-	</script>
-	<noscript>
-		<div><img src="https://mc.yandex.ru/watch/93357189" style="position:absolute; left:-9999px;" alt="" /></div>
-	</noscript>
-	<!-- /Yandex.Metrika counter -->
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-L5KWBCN0BG"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-L5KWBCN0BG');
-	</script>
 </body>
 
 </html>
